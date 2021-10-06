@@ -1,0 +1,524 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html { scroll-behavior: smooth; } 
+@font-face {
+    font-family: SFUFuturaHeavy;
+src: url("assets/font/SFUFuturaHeavy.ttf") format("truetype");
+}
+.main-nav .navbar {
+	background-color: rgba(28,60,109,.8);
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	padding: 0;
+	margin: 0;
+
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: #ffffff;
+}
+.main-nav .navbar a img {
+	width: 170px;
+}
+.main-nav .navbar-nav .nav-item .nav-link {
+	color: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 15px 30px;
+}
+.main-nav .navbar-nav .nav-item .nav-link:hover {
+	color: yellow;
+}
+.slider img {
+	width: 100%;
+}
+.header-form {
+	position: absolute;
+    z-index: 2;
+    top: 12%;
+    left: 12%;
+    right: 12%;
+}
+.form-title span {
+	display: block;
+	font-size: 27px;
+}
+.bg-form-register {
+    background-color: rgba(28,60,109,0.6);
+    padding: 30px 15px 30px 15px;
+    display: block;
+	color: #fff;
+}
+.field-input {
+    background: #fff;
+    border: none;
+    color: #333;
+    height: 42px;
+    margin-top: 15px;
+    padding: 0 10px;
+	width: 100%;
+}
+.field-input-register {
+	text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin-top: 15px;
+    border: none;
+	color: #2f1d5b;
+    width: 100%;
+	height: 42px;
+	background: linear-gradient(to right, #ae7830 0%,#eae297 50%,#ae7830 100%);
+}
+.carousel-inner {
+	position: relative;
+	width: 100%;
+    overflow: hidden;
+}
+.carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	margin: 2px;
+	cursor: pointer;
+	text-indent:-999px;
+	border-radius: 5px;
+	background-color: #2168a1 !important;
+	border: 1px solid white;
+}
+.carousel-indicators .active {
+	height: 12px;
+	width: 12px;
+	background-color: #ffd118 !important;
+}
+.apartment-premises {
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+.plan-content {
+	text-align: center;
+}
+.plan-content .title {
+    text-transform: uppercase;
+    color: #2168a1;
+    font-size: 23px;
+}
+.plan-content hr {
+	width: 20%;
+	border: 1px solid #cccccc;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-villas {
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu-villas li {
+	display: inline-block;
+	width: 10%;
+	margin:10px 20px;
+}
+.menu-villas li.active a {
+	background-color:  #ffffff;
+	color: #49638A;
+}
+.menu-villas li a {
+	display: block;
+    width: 100%;
+    border: 1px solid #49638A;
+    border-radius: 10px;
+    background-color: #49638A;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+}
+.menu-villas li a:hover {
+	background-color:  #ffffff;
+	color: #49638A;
+}
+.pd-0 {
+	padding: 0;
+}
+.img-reponsive {
+	max-width: 100%;
+}
+.image-villas {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	position: static!important;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+.image-project .isotopeMenu li a {
+    color: black!important;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.isotopeMenu>li.active {
+    background: rgb(106, 189, 233);
+}
+
+.top-menu-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.isotopeMenu {
+    color: rgb(72, 72, 72);
+}
+
+.rx_isotope_ui {
+    width: 100%;
+}
+
+.isotopeMenu li {
+    padding: 10px 20px 13px 25px;
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    margin: -3px;
+    background: white none repeat;
+}
+
+.top-menu-project {
+    width: 100%;
+    padding-left: 0;
+}
+
+.isotope_top_space {
+    height: 5px;
+}
+
+.isotopeItemOverlay {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.img-fluid {
+    max-width: 100%;
+    max-height: 250px;
+    text-align: center;
+}
+
+.img-fluid img {
+	top: 50%;
+	left: 50%;
+	vertical-align:middle;
+}
+
+.element-item {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.element-item:hover {
+    background: rgba(106, 189, 233, 0.15);
+}
+
+.images-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+    background-color: #6abde9;
+}
+
+.element-item:hover .images-fluild {
+    opacity: 0.5;
+}
+
+.element-item:hover .images-overlay {
+    opacity: 1;
+    background-color: #6abde9;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.images-overlay .images-beacon .beacon-circle1 {
+    position: absolute;
+    left: 32%;
+    bottom: 35%;
+    margin: auto;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #6abde9;
+    background: rgba(106, 189, 233, .4);
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.images-overlay .images-beacon .beacon-circle1:hover {
+    opacity: 0;
+    transform: matrix(1.5, 0, 0, 1.5, 0, 0)
+}
+
+.images-overlay .images-beacon .beacon-circle2 {
+    position: absolute;
+    left: 36%;
+    bottom: 39%;
+    margin: auto;
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #6abde9;
+    background: rgba(106, 189, 233, .8);
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.images-overlay .images-beacon .beacon-circle2:hover {
+    opacity: 0.7;
+    transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
+/*.category-villas {
+    margin: 0 auto;
+}*/
+.category-villas {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*** Simple fade transition*/
+.mfp-fade.mfp-bg {
+ opacity: 0;
+ -webkit-transition: all 0.15s ease-out; 
+ -moz-transition: all 0.15s ease-out; 
+ transition: all 0.15s ease-out;
+ }
+.mfp-fade.mfp-bg.mfp-ready {
+ opacity: 0.8;
+ }
+.mfp-fade.mfp-bg.mfp-removing {
+ opacity: 0;
+ }
+.mfp-fade.mfp-wrap .mfp-content {
+ opacity: 0;
+ -webkit-transition: all 0.15s ease-out; 
+ -moz-transition: all 0.15s ease-out; 
+ transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+ opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+opacity: 0;
+}
+.mfp-iframe-holder .mfp-close {
+    top: -7px!important;
+}
+.mfp-iframe-holder .mfp-close {
+    right: 5px!important;
+}
+
+.utility {
+    
+}
+.gallery-item {
+    display: block;
+    float: left;
+    position: relative;
+    width: 19%;
+    height: 212.5px;
+    margin:0 0.5% 15px;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.gallery-item:first-child {
+    width: 39%;
+    height: 440px;
+}
+.gallery-item .fa-search {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+.gallery-item:hover .fa-search {
+    top: 50%;
+    opacity: 1;
+}
+.gallery-item:hover, .gallery-item:before {
+    opacity: 0.5;
+}
+.gallery-item:before {
+    opacity: 0;
+    background: linear-gradient(to bottom, #1F6483 0%,#0f0f26 100%);
+}
+
+#tour-360 {
+    background: url(./assets/images/bg_sky.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 25px;
+}
+#tour-360 .title-tour {
+    color: #fff;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.button-tour {
+    margin-top: 25px;
+}
+.button-tour a {
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.project-location {
+    padding: 20px 0;
+}
+.map-image {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.border-right, .border-left {
+    text-align: center;
+}
+.border-right p, .border-left p {
+    font-style: italic;
+}
+.title-contact {
+    text-transform: uppercase;
+    color: #2168a1;
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+}
+.contact {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.contact .border-right span, .contact .border-left span {
+    font-family: 'SFUFuturaHeavy';
+    font-size: 23px;
+    color: #2168a1;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.field-input1 {
+    text-align: center;
+    padding: 2px 0;
+    background: #fff;
+    margin-top: 12px;
+    border: 1px solid #cccccc;
+    width: 100%;
+    color: #000000;
+    outline: none;
+}
+.field-input-register1 {
+    background: url(assets/images/bg_nuttuvan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 0;
+    margin-top: 12px;
+    border: none;
+    border-radius: 4px;
+    color: #2168a1;
+    width: 100%;
+    min-height: 28px;
+    font-family: 'SFUFuturaHeavy';
+}
+ button.field-input-register1:focus {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.footer {
+    color: #fff;
+    text-align: left;
+    background: #1f6483;
+    padding: 20px 0;
+}
+.footer h2 {
+    padding-bottom: 10px;
+}
+.footer-about h2, .footer-contact h2, .footer-link h2 {
+    font-size: 24px;
+    font-family: 'SFUFuturaHeavy';
+    text-transform: uppercase;
+}
+.footer-contact p i {
+    padding-right: 10px;
+    font-size: 18px;
+}
+.list-item ul {
+    display: inline;
+}
+.list-item li  {
+    list-style-type: none;
+}
+.list-item li a {
+    color: #fff;
+}
+.list-item li a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+.log-footer {
+    max-width: 80%;
+    height: auto;
+}
+.rm-pd {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}

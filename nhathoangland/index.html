@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nhat Hoang Land</title>
+	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <!-- font-awesome icon -->
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" rel="stylesheet"/>
+    <!-- css -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Carousel -->
+    <link href="assets/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css">
+    <link href="assets/js/jquery.fancybox.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<!-- Navbar -->
+		<div class="main-nav">
+			<nav class="navbar navbar-expand-md navbar-default navbar-fixed-top" id="header_nav">
+                <button class="navbar-toggler" data-target=".dual-nav" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="navbar-collapse collapse dual-nav order-2 order-md-1 justify-content-end menu-main">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service-one">
+                                Tổng quan
+                            </a>
+                        </li>                            
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tien-ich">
+                                Tiện ích
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mat-bang">
+                                Mặt bằng
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand logo-image mx-auto order-0 order-md-2" href="index.html">
+                    <img alt="#" src="assets/images/logo.png">
+                </a>
+                <div class="navbar-collapse collapse dual-nav order-3 order-md-3 menu-main">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">
+                                360 <sup>0</sup> Tour
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#anh-that-du-an">
+                                Hình ảnh thực tế
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lien-he">
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+		</div>
+		<div class="header-form">
+            <div class="row">
+                <div class="col-md-4 pull-right">
+                    <div class="bg-form-register">
+                        <div class="form-title text-uppercase text-center">
+                            <span>Điền thông tin</span>
+                            Để nhận bộ tài liệu
+                            <span>TNR SKY PARK</span>
+                        </div>
+                        <input type="text" id="full-name" name="full-name" class="field-input" placeholder="Họ và tên">
+                        <input type="text" id="phone-number" name="phone-number" class="field-input" placeholder="Số điện thoại">
+                        <input type="email" id="email-address" name="emai-address" class="field-input" placeholder="Email">
+                        <button type="button" id="button-header" class="field-input-register" name="register">Nhận trọn bộ tài liệu</button>
+                        
+                    </div>
+                    <a href="https://www.youtube.com/embed/GK86NCk8uPs" class="popup-youtube">
+                        <img class="img-reponsive" src="assets/images/youtube-video.jpg" alt="#">
+                    </a>
+                </div>
+            </div>
+        </div>    
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/slide_2.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/slide_3.jpg" alt="Second slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="apartment-premises" id="mat-bang">
+        <div class="container">
+            <div class="plan-content">
+                <h2 class="title">Mặt bằng căn hộ</h2>
+                <hr>
+                <p> Mỗi căn hộ tại TNR Sky Park đều được thiết kế để đón ánh nắng ấm áp và tận hưởng những gió mát lành một cách tối đa.
+                </p>
+            </div>
+
+            <div class="row">
+            	<div class="col-md-12">
+	                <ul class="menu-villas">
+	                    <li data-filter="*" class="active"><a href="#">Tất cả căn</a></li>
+	                    <li data-filter=".can-ho-1"><a href="#">Căn hộ số 1</a></li>
+	                    <li data-filter=".can-ho-2"><a href="#">Căn hộ số 2</a></li>
+	                    <li data-filter=".can-ho-3"><a href="#">Căn hộ số 3</a></li>
+	                    <li data-filter=".can-ho-4"><a href="#">Căn hộ số 4</a></li>
+	                    <li data-filter=".can-ho-5"><a href="#">Căn hộ số 5</a></li>
+	                    <li data-filter=".can-ho-6"><a href="#">Căn hộ số 6</a></li>
+	                    <li data-filter=".can-ho-7"><a href="#">Căn hộ số 7</a></li>
+	                    <li data-filter=".can-ho-8"><a href="#">Căn hộ số 8</a></li>
+	                    <li data-filter=".can-ho-9"><a href="#">Căn hộ số 9</a></li>
+
+	                </ul>
+	            </div>
+            </div>     
+        
+            <div class="category-villas">
+                <div class="col-md-3 element-item can-ho-1" data-src="assets/images/canho1.jpg">
+                    <a href="assets/images/canho1.jpg"  class="show_gallery">
+                        <img class="img-fluid" src="assets/images/canho1.jpg" alt="#" title="Căn hộ 1">
+                        <div class="images-overlay">
+                            <div class="images-beacon">
+                                <div class="beacon-circle1"></div>
+                                <div class="beacon-circle2">
+                                    <img class="beacon-open" src="assets/images/link_icon_beacon.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 element-item  can-ho-2">
+                    <a href="assets/images/canho2.jpg" data-src="assets/images/canho2.jpg" class="show_gallery">
+                        <img class="img-fluid" src="assets/images/canho2.jpg" alt="#" title="Căn hộ 2">
+                        <div class="images-overlay">
+                            <div class="images-beacon">
+                                <div class="beacon-circle1"></div>
+                                <div class="beacon-circle2">
+                                    <img class="beacon-open" src="assets/images/link_icon_beacon.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 element-item can-ho-3">
+                    <a href="assets/images/canho3.jpg" data-src="assets/images/canho3.jpg" class="show_gallery">
+                        <img class="img-fluid" src="assets/images/canho3.jpg" alt="#" title="Căn hộ 3">
+                        <div class="images-overlay">
+                            <div class="images-beacon">
+                                <div class="beacon-circle1"></div>
+                                <div class="beacon-circle2">
+                                    <img class="beacon-open" src="assets/images/link_icon_beacon.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>  
+                <div class="col-md-3 element-item can-ho-4">
+                    <a href="assets/images/canho4.jpg" class="show_gallery" data-src="assets/images/canho4.jpg">
+                        <img class="img-fluid" src="assets/images/canho4.jpg" alt="#" title="Căn hộ 4">
+                        <div class="images-overlay">
+                            <div class="images-beacon">
+                                <div class="beacon-circle1"></div>
+                                <div class="beacon-circle2">
+                                    <img class="beacon-open" src="assets/images/link_icon_beacon.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 element-item can-ho-4">
+                    <a href="assets/images/canho4.jpg" class="show_gallery" data-src="assets/images/canho4.jpg">
+                        <img class="img-fluid" src="assets/images/canho4.jpg" alt="#" title="Căn hộ 4">
+                        <div class="images-overlay">
+                            <div class="images-beacon">
+                                <div class="beacon-circle1"></div>
+                                <div class="beacon-circle2">
+                                    <img class="beacon-open" src="assets/images/link_icon_beacon.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 element-item can-ho-5">
+                    <a href="assets/images/canho5.jpg" class="show_gallery" data-src="assets/images/canho5.jpg">
+                        <img class="img-fluid" src="assets/images/canho4.jpg" alt="#" title="Căn hộ 5">
+                        <div class="images-overlay">
+                            <div class="images-beacon">
+                                <div class="beacon-circle1"></div>
+                                <div class="beacon-circle2">
+                                    <img class="beacon-open" src="assets/images/link_icon_beacon.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 element-item can-ho-6">
+                    <a href="assets/images/canho6.jpg" class="show_gallery" data-src="assets/images/canho6.jpg">
+                        <img class="img-fluid" src="assets/images/canho6.jpg" alt="#" title="Căn hộ 6">
+                        <div class="images-overlay">
+                            <div class="images-beacon">
+                                <div class="beacon-circle1"></div>
+                                <div class="beacon-circle2">
+                                    <img class="beacon-open" src="assets/images/link_icon_beacon.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 element-item can-ho-7">
+                    <a href="assets/images/canho4.jpg" class="show_gallery" data-src="assets/images/canho7.jpg">
+                        <img class="img-fluid" src="assets/images/canho7.jpg" alt="#" title="Căn hộ 7">
+                        <div class="images-overlay">
+                            <div class="images-beacon">
+                                <div class="beacon-circle1"></div>
+                                <div class="beacon-circle2">
+                                    <img class="beacon-open" src="assets/images/link_icon_beacon.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 element-item can-ho-8">
+                    <a href="assets/images/canho8.jpg" class="show_gallery" data-src="assets/images/canho8.jpg">
+                        <img class="img-fluid" src="assets/images/canho8.jpg" alt="#" title="Căn hộ 8">
+                        <div class="images-overlay">
+                            <div class="images-beacon">
+                                <div class="beacon-circle1"></div>
+                                <div class="beacon-circle2">
+                                    <img class="beacon-open" src="assets/images/link_icon_beacon.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>  
+            </div>
+        </div>        
+    </div>
+    <div class="photo-realistic" id="anh-that-du-an">
+    	<div class="container">
+    		<div class="plan-content">
+	            <h2 class="title">Ảnh thật dự án</h2>
+	            <hr>
+	        </div>
+	    </div>    
+        <div class="row">
+        	<div class="item-facilities">
+        		<a href="assets/images/1.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/1.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/2.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/2.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/3.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/3.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/4.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/4.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/5.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/5.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/6.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/6.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/7.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/7.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+			
+        	</div>
+        </div>
+    </div>
+    <div class="utility" id="tien-ich">
+    	<div class="container">
+    		<div class="plan-content">
+	            <h2 class="title">Tiện ích cảnh quan</h2>
+	            <hr>
+	            <p>Nằm ngay giữa một Hà Nội đầy ồn ào và náo nhiệt, TNR Sky Park hiện lên như một ốc đảo bình yên, xanh mát, tách ra khỏi những bụi bặm của đời thường.</p>
+	        </div>
+	    </div>    
+        <div class="row">
+        	<div class="item-facilities">
+        		<a href="assets/images/1.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/1.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/2.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/2.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/3.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/3.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/4.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/4.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/5.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/5.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/6.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/6.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+				<a href="assets/images/7.jpg" class="gallery-item" data-fancybox="project-image">
+					<img src="assets/images/7.jpg">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+			
+        	</div>
+        </div>
+    </div>
+    <div class="tour-360" id="tour-360">
+    	<div class="container">
+    		<div class="plan-content">
+	            <h2 class="title-tour">TNR SKY PARK 360&deg; </h2>
+	            <hr>
+	            <p>Các công nghệ hiện đại hàng đầu từ những thương hiệu nổi tiếng được ứng dụng và trang bị đồng bộ từ sảnh tòa nhà đến từng căn hộ.</p>
+	        </div>
+	        <a href="#">
+	        	<img src="assets/images/sky_hinh_sanh_sapphire.jpg" alt="#" class="img-reponsive center-block">
+	        </a>
+	        <div class="button-tour">
+	        	<a href="#" class="btn btn-primary">Xem dự án 360&deg;</a>
+	        </div>
+	    </div>
+    </div>
+    <div class="project-location">
+    	<div class="container">
+    		<div class="plan-content">
+	            <h2 class="title">Vị trí dự án </h2>
+	            <hr>
+	            <p>Các công nghệ hiện đại hàng đầu từ những thương hiệu nổi tiếng được ứng dụng và trang bị đồng bộ từ sảnh tòa nhà đến từng căn hộ.</p>
+	        </div>
+	    </div>
+	    <div class="container-fluid">
+	    	<div class="location-project">
+	    		<a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="popup-map">
+                 <img class="map-image" src="assets/images/map.png" alt="#"> 
+            	</a>
+	    	</div>
+	    </div>   
+    </div>
+    <div class="contact" id="lien-he">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 border-right">
+    				<h2 class="title-contact">NHẬN TRỌN BỘ TÀI LIỆU DỰ ÁN</h2>
+    				<span>TNR SKY PARK</span>
+    				<p class="text-contact">
+    					"Sau khi điền thông tin và click Nhận tư trọn bộ tài liệu ngay"<br>
+    					 bộ phận CSKH của TNR SKY PARK sẽ liên hệ với bạn qua điện thoại để tư vấn.
+    				</p>
+
+    			</div>
+    			<div class="col-md-6 border-left">
+    				<h2 class="title-contact">ĐIỀN THÔNG TIN ĐỂ</h2>
+    				<span>NHẬN TƯ VẤN & CHÍNH SÁCH ƯU ĐÃI MỚI NHẤT</span><br>
+    				<h2 class="title-contact">DỰ ÁN "TNR SKY PARK"</h2>
+    				
+    				<form action="">
+    					<div class="row">
+    						<div class="col-sm-6">
+    							<input type="text" id="full-name" name="hovaten" class="field-input1" placeholder="HỌ VÀ TÊN">
+    						</div>
+    						<div class="col-sm-6">
+    							<input type="email" id="email" name="email" class="field-input1" placeholder="EMAIL">
+    						</div>
+    						<div class="col-sm-6">
+    							<input type="phone" id="phone" name="phone" class="field-input1" placeholder="ĐIỆN THOẠI">
+    						</div>
+    						<div class="col-sm-6">
+    							<button type="button" class="field-input-register1" name="dangkingay">nhận trọn bộ tài liệu ngay</button>
+    						</div>
+    					</div>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="footer" id="footer">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-3 footer-about wow fadeInUp animated">
+    				<h2>Về chúng tôi</h2>
+    				<p>We are a young company always looking for new and creative ideas to help you with our products in your everyday work.</p>
+    				<p>© Company Inc.</p>
+    			</div>
+    			<div class="col-md-4 offset-md-1 footer-contact wow fadeInUp animated">
+    				<h2>Liên hệ</h2>
+    				<p>
+    					<i class="fas fa-map-marker-alt"></i>
+    					Via Rossini 10, 10136 Turin Italy
+    				</p>
+    				<p>
+    					<i class="fas fa-phone"></i>
+    					Phone: (0039) 333 12 68 347
+    				</p>
+    				<p>
+    					<i class="fas fa-envelope"></i>
+    					Email: hello@domain.com
+    				</p>
+    				<p>
+    					<i class="fab fa-skype"></i>
+    					Skype: you_online
+    				</p>
+    			</div>
+    			<div class="col-md-4 footer-link">
+    				<div class="row list-item">
+    					<h2>Nhật Hoàng land</h2>
+    					<div class="col-md-6 rm-pd">
+
+    						<ul>
+    							<li><a href="#">Trang chủ</a></li>
+    							<li><a href="#">Tiện ích</a></li>
+    							<li><a href="#">Mặt bằng</a></li>
+    						</ul>
+    					</div>
+    					<div class="col-md-6 rm-pd">
+    						<ul>
+    							<li><a href="#">360</a></li>
+    							<li><a href="#">Hình ảnh thực tế</a></li>
+    							<li><a href="#">Liên hệ</a></li>
+    						</ul>
+    					</div>
+    				</div>
+    				<div class="row">
+    					<div class="col">
+    						<img src="assets/images/logo_ft.png" alt="#" class="log-footer">
+    					</div>
+    				</div>
+    				
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+    <script src="assets/owlcarousel/owl.carousel.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

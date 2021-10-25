@@ -1,0 +1,75 @@
+.header {
+    background: url('./../images/banner.png')no-repeat center center;
+    height: 100%;
+    z-index: -999;
+    //Top
+    &-top {
+        display: flex;
+        align-items: center;
+        padding: 55px 0;
+    }
+
+    &-box {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    // Menu
+    &-menu {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+
+        .menu-item {
+            padding: 10px;
+        }
+
+        .menu-link {
+            display: inline-block;
+            font-size: 15px;
+            line-height: calc(28 / 15);
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $light-text;
+            text-decoration: none;
+        }
+    }
+    &-social {
+        a {
+            display:inline-block;
+            font-size: 20px;
+            line-height: 50px;
+            color: $light-text;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+    }
+    //Content
+    &-content {
+        padding: 20px;
+        max-width: 826px;
+        margin: 0 auto;
+        text-align: center;
+        color: $light-text;
+
+        .big-title {
+            font-size: 74px;
+            font-weight: 700;
+            line-height: calc(84 / 74);
+            margin-bottom: 12px;
+        }
+        
+        .text {
+            margin-bottom: 12px;
+        }
+
+        .button {
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 40px 0;
+        }
+    }
+}

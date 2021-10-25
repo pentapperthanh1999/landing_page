@@ -1,0 +1,38 @@
+.partners {
+    text-align: center;
+    &-top {
+        margin: 0 auto;
+        max-width: 552px;
+
+        .heading {
+            padding: 10px;
+        }
+    }
+
+    &-list {
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(273px, 1fr) );
+        min-width: auto;
+        min-height: auto;
+        
+        height: 100%;
+        .item {
+            padding: 50px;
+            text-align: center;
+            border: 1px solid #D8D8D8;
+            .text--small {
+                margin-bottom: 20px;
+                
+            }
+            img {
+                max-width: 193px;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+    .button--try {
+        margin-bottom: 60px;
+    }
+}

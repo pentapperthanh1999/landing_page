@@ -1,0 +1,28 @@
+.partner-up{
+    margin-bottom: 50px;
+    &-box {
+        background-image: url("./../images/banner3.jpg");
+        background-size: cover;
+        padding: 50px;
+        text-align: center;
+        border-radius: 30px;
+
+        .heading {
+            margin-bottom: 30px;
+        }
+
+        .text {
+            margin-bottom: 30px;
+        }
+
+        .button-global { 
+            background-color: #fff;
+            color: $primary-color;
+            text-decoration: none;
+            &:hover {
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+    }
+}

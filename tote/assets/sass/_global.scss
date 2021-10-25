@@ -1,0 +1,48 @@
+body {
+    font-family: $font;
+    background-color: #F4F4F4;
+    position: relative;
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 105px;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 29px;
+    font-size: 16px;
+    line-height: calc(16/24);
+    font-weight: 700;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background-color: $yellow-color;
+    border-radius: 30px;
+    border: 1px solid $yellow-color;
+    color: $heading-color;
+    &--product {
+        display: block;
+        text-align: center;
+        padding: 15px 29px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 24px;
+    }
+}

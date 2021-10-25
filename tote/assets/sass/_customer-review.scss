@@ -1,0 +1,156 @@
+.customer-review {
+    display: flex;
+    margin-bottom: 100px;
+    &__top {
+        max-width: 600px;
+    }
+    &__image {
+        width: 600px;
+        height: 700px;
+        transform: translateX(-100px);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    .review-list {
+        
+        &-item {
+            
+        }
+        
+    }
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .mySwiperCustomerReview {
+        position: relative;
+        max-height: 555px;
+        
+        .review-list {
+            overflow: hidden;
+            position: relative;
+            .swiper-slide-next {
+                opacity: 1;
+            }
+            &-item {
+                opacity: 0.5;
+            }
+            
+        }
+        .swiper-button-prev, .swiper-button-next {
+            cursor: pointer;
+            margin: 20px 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #FFC800;
+            &::after {
+                font-size: 18px;
+                font-weight: 700;
+                color: #000;
+            }
+        }
+        .review-pagination {
+            .swiper-button-prev {
+                transform: rotate(90deg);
+                top: 40%;
+                left: 90%;
+                margin: 0;
+            }
+            .swiper-button-next {
+                top: 50%;
+                left: 90%;
+                transform: rotate(90deg);
+                margin: 0;
+            }
+        }
+        // .review-pagination {
+        //     position: absolute;
+        //     top: 50%;
+        //     right: 0;
+        //     -webkit-transform: translate(-50%, -50%);
+        //     -moz-transform: translate(-50%, -50%);
+        //     -ms-transform: translate(-50%, -50%);
+        //     -o-transform: translate(-50%, -50%);
+        //     transform: translate(-50%, -50%);
+        //     .btn-review {
+        //         cursor: pointer;
+        //         margin: 20px 0;
+        //         width: 40px;
+        //         height: 40px;
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+        //         border-radius: 50%;
+        //         background: #FFC800;
+                
+        //     }
+        //     .next i {
+        //         transform: rotate(90deg);
+        //     }
+        //     .prev i {
+        //         transform: rotate(90deg);
+        //     }
+        // }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .customer-review {
+        flex-direction: column;
+        &__top {
+            padding: 0 24px;
+            .text--content {
+                margin-bottom: 17px;
+            }
+        }
+        &__image {
+            width: 307px;
+            height: 360px;
+            transform: translateX(-48px);
+            margin-bottom: 32px;
+            margin-top: 50px;
+        }
+
+        .mySwiperCustomerReview {
+            max-height: 311px;
+            padding: 50px 0;
+            .review-list{
+                overflow: visible;
+            }
+            .review-pagination {
+                display: block;
+                .swiper-button-prev {
+                    transform: rotate(0);
+                    z-index: 9;
+                }
+                .swiper-button-next {
+                    top: 50%;
+                    left: 90%;
+                    transform: rotate(0);
+                    margin: 0;
+                    z-index: 9;
+
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .customer-review {
+        flex-direction: column;
+        &__image {
+            transform: translateX(0);
+        }
+    }
+}

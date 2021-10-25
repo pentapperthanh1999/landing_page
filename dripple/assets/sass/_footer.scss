@@ -1,0 +1,98 @@
+.footer {
+    background-color: #fcedea;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+
+        .text {
+            margin-bottom: 0;
+
+            span {
+                font-weight: bold;
+            }
+
+            a {
+                color: $primary-color;
+                transition: all 0.5s;
+
+                &:hover {
+                    transition: all 0.5s;
+                    color: red;
+                }
+            }
+        }
+
+        .social-network {
+
+            &__title {
+                font-size: 18px;
+                line-height: calc(24/18);
+                font-weight: 500;
+                color: #333;
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                margin-bottom: 0;
+                gap: 0 20px;
+
+                .icon {
+                    display:inline-block;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color:white;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    vertical-align: bottom;
+                    transition: all 0.5s;
+
+                    &.item-one, &.item-four {
+                        color: #4099ff;
+                        
+                        &:hover {
+                            color: red;
+                            transition: all 0.5s;
+                        }
+                    }
+
+                    &.item-two {
+                        color: red;
+
+                        &:hover {
+                            color: #4099ff;
+                            transition: all 0.5s;
+                        }
+                    }
+
+                    &.item-three {
+                        color: #3b5998;
+
+                        &:hover {
+                            color: red;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        &-wrapper {
+            flex-direction: column;
+            text-align: center;
+            .text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+} 

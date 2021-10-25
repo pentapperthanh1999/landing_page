@@ -1,0 +1,43 @@
+body {
+    font-family: $font;
+    background-color: #f7f7f7;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    span {
+        color: $primary-color;
+    }
+}
+
+.small-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.small-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+@media screen and (max-width: 576px) {
+    .heading {
+        font-size: 25px;
+    }
+    
+    .small-title {
+        font-style: 20px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+ } 

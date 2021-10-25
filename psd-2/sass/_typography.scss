@@ -1,0 +1,36 @@
+@font-face {
+    font-family: $font;
+    src: url(./../font/GraphikRegular.otf);
+}
+
+body {
+    font-family: $font;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: calc(55 / 48);
+    color: $text-color-heading;
+}
+
+.title {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    color: $text-color-heading;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: calc(40 / 28);
+    &--small {
+        font-size: 18px;
+        line-height: calc(25 / 18);
+        color: $second-text-color;
+    }
+}
+

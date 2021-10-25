@@ -1,0 +1,45 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-weight: bold;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: calc(72/48);
+}
+
+.text {
+    line-height: calc(24 / 16);
+    font-family: $font-secondary;
+    &--title {
+        font-weight: 500;
+    }
+    &--content {
+        font-weight: 400;
+    }
+    &--title-product {
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .heading {
+        font-size: 36px;
+        line-height: calc(48/36);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heading {
+        font-size: 24px;
+        line-height: calc(36/24);
+        font-weight: 700;
+    }
+}

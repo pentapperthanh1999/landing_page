@@ -1,0 +1,95 @@
+.question-and-answer {
+    padding: 50px;
+
+    &__content {
+        text-align: center;
+        
+        .heading , .text {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list {
+        
+        .list-item {
+            border-bottom: 1px solid #333;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 60px;
+            position: relative;
+
+            &-body {
+                cursor: pointer;
+                span {
+                    position: absolute;
+                    left: 0;
+                    top: 20px;
+                }
+
+                .small-title  {
+                    margin-bottom: 0px;
+                }
+            }
+            .content {
+                display: none;
+
+                .small-title {
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                }
+
+                .text {
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+            }
+            
+
+            &:nth-child(1) .content {
+                display: block;
+            }
+
+            .icon {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                background: $primary-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                flex-shrink: 0;
+                color: #fff;
+
+                i {
+                    
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+
+            
+        }
+    }
+    &__faq {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 35px;
+        gap: 0 10px;
+        .small-title {
+            margin: 0;
+            color: $primary-color;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            i {
+                color: $primary-color;
+                font-size: 20px;
+            }
+        }
+    }
+}

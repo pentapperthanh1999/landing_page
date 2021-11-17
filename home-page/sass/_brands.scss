@@ -1,0 +1,13 @@
+.brands {
+    background-color: $secondary-color;
+
+    &-list {
+        .owl-wrapper-outer {
+            .owl-wrapper {
+                .owl-item {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

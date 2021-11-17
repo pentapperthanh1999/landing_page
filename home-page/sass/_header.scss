@@ -1,0 +1,96 @@
+.header {
+    background: url("./../image/banner-header.jpg") no-repeat;
+    background-size: cover;
+    height: 500px;
+
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-phone {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .phone-text {
+            color: #fff;
+            .title {
+                font-size: 14px;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+                color: inherit;
+            }
+            .phone-number {
+                cursor: pointer;
+                font-size: 24px;
+                font-size: bold;
+                transition: all .3s;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+        
+        .phone-icon {
+            display:inline-block;
+            font-size: 30px;
+            line-height: 90px;
+            background-color: $primary-color;
+            color:white;
+            width: 90px;
+            height: 90px;
+            text-align: center;
+            vertical-align: bottom;
+            cursor: pointer;
+            
+            &:hover {
+                background: $hover-color;
+                transition: all .3s;
+            }
+
+            i {
+                transform: rotate(305deg);
+            }
+        }
+    }
+    .menu {
+        display: flex;
+        gap: 20px;
+
+        &-item {
+            color: #fff;
+            padding: 10px;
+            .menu-link {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 0;
+                    width: 0;
+                    height: 3px;
+                    border-bottom: 3px solid $primary-color;
+                    color: $primary-color;
+                    visibility: hidden;
+                    transition: all ease-in-out .2s;
+                }
+            }
+            &.active, &:hover {
+                .menu-link {
+                    &::after {
+                        visibility: visible;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &-link {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}

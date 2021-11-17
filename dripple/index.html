@@ -11,12 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>   
+    <link rel="stylesheet" href="./assets/css/app.css">
+    
 </head>
 <body>
     <div class="container-fluid">
+        <div class="click-to-top" id="click-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
         <!-- Header -->
         <section class="container header">
             <!-- Header-Top -->
@@ -30,7 +33,7 @@
                         <a href="#">About Us</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Question</a>
+                        <a href="#question">Question</a>
                     </li>
                     <li class="menu-item">
                         <a href="#">Content</a>
@@ -40,15 +43,19 @@
                     </li>
                 </ul>
                 <div class="menu-toggle">
-                    <span></span><span></span><span></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                   </div>
                 <div class="header-top-content">
-                    <div class="phone">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>+0123456789</span>
+                    <div>
+                        <a class="phone" href="tel:0123456789">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+0123456789</span>
+                        </a>
+                        
+                        <a href="#" class="button-global"><span>Sign in</span></a>
                     </div>
-                    
-                    <a href="#" class="button-global"><span>Sign in</span></a>
                     <div class="lang">
                         <i class="fas fa-globe"></i>
                         <span>EN</span>
@@ -332,7 +339,7 @@
             </div>
         </section>
         <!-- Questions And Answers -->
-        <section class="container question-and-answer">
+        <section class="container question-and-answer" id="question">
             <div class="question-and-answer__content">
                 <h2 class="heading">
                     Still have 
@@ -397,8 +404,15 @@
                     Hear Something From <span>Out Clients</span>
                 </h2>
                 <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste velit inventore magnam provident quae reiciendis, recusandae voluptatibus doloribus ab, soluta, nisi tenetur odit nesciunt nam! Iure fugit fuga quae doloremque!</p>
-                <div class="out-client-slider">
-                    <div class="out-client-slider__content">
+                
+            </div>
+            <!-- Out-Clent-Slide -->
+            <div class="row out-client-slider">
+                <div class=" col-md-6 col-sm-12 out-client-slider__image">
+                    <img src="./assets/images/banner.png" alt="#">
+                </div>
+                <div class=" col-md-6 col-sm-12 out-client-slider__content">
+                    <div class="member">
                         <div class="quotes">
                             <i class="fas fa-quote-left"></i>
                         </div>
@@ -428,16 +442,15 @@
                                 Frontend Developer
                             </span>
                         </div>
-                        <div class="control">
-                            <div class="left">
-                                <i class="fas fa-arrow-left"></i>
-                            </div>
-                            <div class="right">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
+                    </div>
+                    <div class="control">
+                        <div class="left prev-tab">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <div class="right next-tab">
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
-                    
                 </div>
             </div>
            <div class="out-client-bottom">
@@ -515,8 +528,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
 </script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="./assets/js/app.js"></script>
 </html>

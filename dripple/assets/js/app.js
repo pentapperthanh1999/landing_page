@@ -1,3 +1,9 @@
+const toggleButton = document.getElementsByClassName('menu-toggle')[0];
+const navbarLink = document.getElementsByClassName('menu')[0];
+toggleButton.addEventListener('click', () => {
+  navbarLink.classList.toggle('active');
+})
+
 $('.out-client__list').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -34,10 +40,10 @@ $('.out-client__list').slick({
     ]
   });
 
-$('.out-client-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-})
+// $('.out-client-slider').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+// })
 
 
   $(document).ready(function(){
@@ -62,3 +68,22 @@ console.log(getHeightMenu)
 $('.header-bottom').css('padding-top', getHeightMenu + 'px');
 
 //slider 
+//Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    //nếu lớn hơn 50px thì hiện button
+    document.getElementById("click-to-top").style.display = "flex";
+  } else {
+      //nếu nhỏ hơn 50px thì ẩn button
+      document.getElementById("click-to-top").style.display = "none";
+  }
+}
+
+//gán sự kiện click cho button
+document.getElementById('click-to-top').addEventListener("click", function(){
+  //Nếu button được click thì nhảy về đầu trang
+  $('html, body').animate({scrollTop:0}, 'slow');
+});

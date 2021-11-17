@@ -1,0 +1,60 @@
+body {
+    font-family: $font;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0 135px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 32px;
+
+    &--large {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 400;
+        letter-spacing: -0.25px;
+    }
+}
+
+.heading {
+    color: #2D3436;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    &--large {
+        font-weight: 800;
+        font-size: 96px;
+        line-height: 104px;
+    }
+    &--medium {
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 77px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .container {
+        padding: 0 35px;
+    }
+    .heading {
+        &--large {
+            font-size: 64px;
+            line-height: 77,45px;
+            letter-spacing: -1px;
+        }
+        &--medium {
+            font-size: 48px;
+        }
+    }
+}

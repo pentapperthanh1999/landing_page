@@ -1,0 +1,43 @@
+.title {
+    color: #ffa800;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+}
+
+.sub-title {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.slogan {
+    text-transform: uppercase;
+    color: #11161e;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #11161e;
+    font-family: 'Oswald', sans-serif;
+    &--sub {
+        color: #333;
+        font-weight: 300;
+    }
+}
+
+.heading {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}

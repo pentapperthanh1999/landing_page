@@ -1,0 +1,67 @@
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    &__box {
+        max-width: 400px;
+        .title {
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+        .slogan {
+            margin-bottom: 50px;
+            &--circle {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100rem;
+                    transform: translateX(50%);
+                    background: $primary-color;
+                    z-index: -1;
+                }
+            }
+        }
+        .heading {
+            margin-bottom: 30px;
+        }
+        .text--sub {
+            margin-bottom: 70px;
+        }
+
+        .btn-discover {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    //Amination Up Down
+    .up-down {
+        -webkit-animation: upNdown 2s infinite linear;
+        animation: upNdown 2s infinite linear;
+        @-webkit-keyframes upNdown {
+            0% { }
+            50% { transform: translateY(-5px); }
+            100% { }
+        }
+        @keyframes upNdown {
+            0% { }
+            50% { transform: translateY(-5px); }
+            100% { }
+        }
+    }
+}

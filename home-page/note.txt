@@ -1,0 +1,64 @@
+
+
+cứ mỗi section làm e cứ auto có phần này cho auto
+đó, .coòn ở trong chia cột ntn thì e phải xem xet design
+
+cái này là trường hợp trong phạm vi width là 1170px
+
+nếu có cái design width là 1600px chẳng hạn 
+thì e biết dùng gì ko
+chưa dùng tới a, e toàn dùng flex chia layout. theo perfect pixce
+ok
+e chưa dùng boostrap nhieeuf ddungs phai ko?. do man hinh nho nen e chua test th 1600 a. @media max-width đó á a. col boostrap thì e hiểu dùng đc. md lg mấy kiểu như rk theo mỗi màn hình á ok?
+
+<div class="container">
+    <div class="row">
+
+    </div>
+</div>   
+
+
+trường hợp tràn ra ngoài phạm vi 1170px
+a ví dụ:
+như cái section đó chẳng hạn:
+thì e dùng ntn
+
+<div class="container-fluid">
+    <div class="row">
+
+        trong này chia cột thôi
+
+    </div>
+</div>
+
+khác nhau cái fluid, này e biết. e toàn k thả cái container vào. paddign theo design. giờ cứ cái section nào là thả vào container heewst à a 
+đúng rồi, design của a toàn là dùng kiểu boostrap nên theo khoảng cách boostrap thôi.da dung theo col boostrap la dc chu k can theo dug px cua design ha a
+đúng design chứ, nó theo khoảng cách BT mà. dạ . a check giao dien bi loi phan nao ngoai spacing k a
+
+font chưa đúng thì phải,. tháy khác design chac pts e lay font bi loi nên e xài 1 font chính.
+uhm
+với mấy cái hover e thêm animaion này
+
+<style>
+    a{
+        transition: all .3s;
+    }
+</style>
+
+nho dung thuoc tinh nay de co animation nha. da e lam trc rk chu chua lam xong may cai rau ria. nen lam ra trc 
+ben a ko dung display grid nhe 
+display: 
+inline
+inline block
+flex
+block 
+
+thong that trong may loaij nay thoi nhe. e code thuan nen k tha vo container nen e dung grid cho le! dung col thi khoi can grid a 
+
+uhm e, e phai tận dụng được thư viện boostrap tối đa là đc, code mấy layout này ko nên code thuần. với phần cvideo dưới có plubgin hay gì hay code thuần a nhỉ
+
+cái này có trong plugin a viết sẵn rồi, khi đưa ra thì nó hơi bể giao diện tí thôi, css vài dòng là đc. dạ chắc do code drriblle quen r nên pts ít xài nên e k xài bs mấy, để e xem lại kĩ boostrap.'mấy cái chấm vàng title có cần code k a. vì căn chỉnh cũng hơi lâu.'
+
+cái đó thật ra cũng phải làm và đúng perfect pixcel,nhưng nếu e cảm thấy giàn layout chưa chuẩn thì phải tập trung luyện layout trước, cái đó làm sau cũng đc
+e luyện tới khi nào mà nhhìn vào design 1  cái là e biết phải dùng gì để làm, chia bao nhiêu cột? là level đó e qua ok a. ok r do a 
+ok vậy a kết thúc nha, có gì ko hiểu thì note lại 1 list rồi bữa sau a call chỉ cho. dạ ok e cảm ơn

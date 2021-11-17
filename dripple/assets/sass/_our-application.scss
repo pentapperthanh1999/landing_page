@@ -96,20 +96,24 @@
 }
 
 @media screen and (max-width: 576px) {
-   .application {
-       &-wrapper {
-           flex-direction: column;
-       }
-       &-content {
-           max-width: 100%;
-       }
-       .download-link {
-           flex-direction: column;
-           gap: 20px 0;
-       }
-       &-image {
-           order: -1;
-           margin: 0 auto;
-       }
-   }
-} 
+   
+}
+
+@media screen and (max-width: 768px) {
+    .application {
+        &-wrapper {
+            flex-direction: column;
+        }
+        &-content {
+            max-width: 100%;
+        }
+        .download-link {
+            flex-direction: column;
+            gap: 20px 0;
+        }
+        &-image {
+            order: -1;
+            margin: 0 auto;
+        }
+    }
+}

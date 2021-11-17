@@ -88,4 +88,16 @@
 
         }
     }
-} 
+}
+
+@media screen and (max-width: 768px) {
+    .apply {
+        flex-direction: column;
+        &-content {
+
+        }
+        &-image {
+            height: 300px;
+        }
+    }
+}

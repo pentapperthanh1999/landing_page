@@ -1,0 +1,39 @@
+body, html {
+    font-family: $font-family;
+}
+
+.heading {
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 700px;
+    color: #101010;
+}
+
+.sub-heading {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    color: $primary-color;
+    font-family: $font-secondary;
+}
+
+.title {
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5%;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    color: $text-color;
+
+    &--small {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -1%;
+        color: #787878;
+    }
+}

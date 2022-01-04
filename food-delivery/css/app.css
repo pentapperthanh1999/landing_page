@@ -1,0 +1,253 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 20px;
+  outline: none;
+  color: #fff;
+  outline: none;
+  border: 1px solid;
+  border-radius: 15px;
+}
+.button i {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #00BE4C;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+.button--green {
+  background: #00BE4C;
+}
+
+body, html {
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 700px;
+  color: #101010;
+}
+
+.sub-heading {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #FF4415;
+  font-family: "Seaweed Script", cursive;
+}
+
+.title {
+  font-size: 26px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5%;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  color: #646464;
+}
+.text--small {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1%;
+  color: #787878;
+}
+
+.hero .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16, 94px;
+  letter-spacing: 0.5%;
+}
+.hero .header .menu {
+  display: flex;
+  gap: 40px;
+}
+.hero .header .menu-item {
+  list-style: none;
+  text-align: center;
+}
+.hero .header .menu-link {
+  text-decoration: none;
+  color: #232323;
+}
+.hero .header__auth {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero .header__auth .sign-up {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+}
+.hero .header__auth .cart {
+  fill: #FF4415;
+  padding: 10px;
+  background-color: #FF4415;
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+}
+.hero .header__auth .cart-number {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: aquamarine;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+  z-index: -1;
+}
+.hero-main {
+  padding-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-main__content {
+  width: 50%;
+  max-width: 515px;
+  min-height: 100%;
+}
+.hero-main__content .sub-heading {
+  margin-bottom: 16px;
+}
+.hero-main__content .heading {
+  margin-bottom: 22px;
+}
+.hero-main__content .text {
+  margin-bottom: 34px;
+}
+.hero-main__content .text span {
+  color: #FF4415;
+}
+.hero-main__content .hero-main-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.hero-main__content .hero-main-form .form-hero-wrapper {
+  position: relative;
+  width: 306px;
+}
+.hero-main__content .hero-main-form .form-hero-wrapper .form-hero {
+  padding: 30px 40px 30px 20px;
+  width: 100%;
+  border: 1px solid #00BE4C;
+  outline: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.hero-main__content .hero-main-form .form-hero-wrapper .img-form-hero {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+.hero-main__content .hero-main-form .button--green {
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.hero-main__image {
+  width: 50%;
+  display: inline-block;
+}
+.hero-main__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-feature__list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.hero-feature__list .item {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #F7F7F7;
+  border-radius: 30px;
+}
+.hero-feature__list .item .content .title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.hero-feature__list .item .content span {
+  color: #FF4415;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.hero-feature__list .item img {
+  width: 117px;
+  height: 117px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=app.css.map */
